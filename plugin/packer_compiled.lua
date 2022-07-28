@@ -69,6 +69,17 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -85,7 +96,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-dictionary"] = {
-    config = { "\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23dictionary-setting\frequire\0" },
+    config = { "\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23plugins.dictionary\frequire\0" },
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-dictionary",
     url = "https://github.com/uga-rosa/cmp-dictionary"
@@ -109,6 +120,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp-signature-help",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help"
+  },
+  ["cmp-nvim-ultisnips"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-ultisnips",
+    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
   },
   ["cmp-omni"] = {
     loaded = true,
@@ -138,6 +154,54 @@ _G.packer_plugins = {
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\denops.vim",
     url = "https://github.com/vim-denops/denops.vim"
   },
+  ["fern-git-status.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fern-git-status.vim",
+    url = "https://github.com/lambdalisue/fern-git-status.vim"
+  },
+  ["fern-renderer-nerdfont.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fern-renderer-nerdfont.vim",
+    url = "https://github.com/lambdalisue/fern-renderer-nerdfont.vim"
+  },
+  ["fern.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fern.vim",
+    url = "https://github.com/lambdalisue/fern.vim"
+  },
+  ["fidget.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vfidget\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
+  ["glyph-palette.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\glyph-palette.vim",
+    url = "https://github.com/lambdalisue/glyph-palette.vim"
+  },
+  ["indent-blankline.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.indent-blankline\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18lsp_signature\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
+  },
   ["lualine.nvim"] = {
     config = { "\27LJ\2\n/\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\20plugins.lualine\frequire\0" },
     loaded = true,
@@ -150,6 +214,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neogit",
     url = "https://github.com/TimUntersberger/neogit"
   },
+  ["nerdfont.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdfont.vim",
+    url = "https://github.com/lambdalisue/nerdfont.vim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
@@ -157,11 +226,22 @@ _G.packer_plugins = {
   },
   ["nvim-cmp"] = {
     after = { "cmp-skkeleton" },
-    config = { "\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16cmp-setting\frequire\0" },
+    config = { "\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16plugins.cmp\frequire\0" },
     loaded = true,
     only_config = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    config = { "\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16plugins.lsp\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     config = { "\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24plugins.tree-sitter\frequire\0" },
@@ -178,6 +258,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
   },
   skkeleton = {
     after = { "cmp-skkeleton" },
@@ -199,6 +284,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ultisnips = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ultisnips",
+    url = "https://github.com/SirVer/ultisnips"
+  },
   ["vgit.nvim"] = {
     config = { "\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17plugins.vgit\frequire\0" },
     loaded = true,
@@ -210,50 +300,95 @@ _G.packer_plugins = {
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-easymotion",
     url = "https://github.com/easymotion/vim-easymotion"
   },
+  ["vim-edgemotion"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-edgemotion",
+    url = "https://github.com/haya14busa/vim-edgemotion"
+  },
+  ["vim-emoji"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-emoji",
+    url = "https://github.com/junegunn/vim-emoji"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-quickhl"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-quickhl",
+    url = "https://github.com/t9md/vim-quickhl"
+  },
   ["vim-rails"] = {
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-rails",
     url = "https://github.com/tpope/vim-rails"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-snippets",
+    url = "https://github.com/honza/vim-snippets"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+try_loadstring("\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16plugins.cmp\frequire\0", "config", "nvim-cmp")
+time([[Config for nvim-cmp]], false)
+-- Config for: fidget.nvim
+time([[Config for fidget.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
+time([[Config for fidget.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 -- Config for: neogit
 time([[Config for neogit]], true)
 try_loadstring("\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19plugins.neogit\frequire\0", "config", "neogit")
 time([[Config for neogit]], false)
+-- Config for: vgit.nvim
+time([[Config for vgit.nvim]], true)
+try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17plugins.vgit\frequire\0", "config", "vgit.nvim")
+time([[Config for vgit.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24plugins.tree-sitter\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
--- Config for: skkeleton
-time([[Config for skkeleton]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.skkeleton\frequire\0", "config", "skkeleton")
-time([[Config for skkeleton]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\29plugins.indent-blankline\frequire\0", "config", "indent-blankline.nvim")
+time([[Config for indent-blankline.nvim]], false)
 -- Config for: cmp-dictionary
 time([[Config for cmp-dictionary]], true)
-try_loadstring("\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23dictionary-setting\frequire\0", "config", "cmp-dictionary")
+try_loadstring("\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23plugins.dictionary\frequire\0", "config", "cmp-dictionary")
 time([[Config for cmp-dictionary]], false)
 -- Config for: skkeleton_indicator.nvim
 time([[Config for skkeleton_indicator.nvim]], true)
 try_loadstring("\27LJ\2\nE\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\24skkeleton_indicator\frequire\0", "config", "skkeleton_indicator.nvim")
 time([[Config for skkeleton_indicator.nvim]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.telescope\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
--- Config for: nvim-cmp
-time([[Config for nvim-cmp]], true)
-try_loadstring("\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16cmp-setting\frequire\0", "config", "nvim-cmp")
-time([[Config for nvim-cmp]], false)
--- Config for: vgit.nvim
-time([[Config for vgit.nvim]], true)
-try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17plugins.vgit\frequire\0", "config", "vgit.nvim")
-time([[Config for vgit.nvim]], false)
+-- Config for: skkeleton
+time([[Config for skkeleton]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.skkeleton\frequire\0", "config", "skkeleton")
+time([[Config for skkeleton]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
 try_loadstring("\27LJ\2\n/\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\20plugins.lualine\frequire\0", "config", "lualine.nvim")
 time([[Config for lualine.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+try_loadstring("\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16plugins.lsp\frequire\0", "config", "nvim-lspconfig")
+time([[Config for nvim-lspconfig]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
+-- Config for: lsp_signature.nvim
+time([[Config for lsp_signature.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\18lsp_signature\frequire\0", "config", "lsp_signature.nvim")
+time([[Config for lsp_signature.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd cmp-skkeleton ]]

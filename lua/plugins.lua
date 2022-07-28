@@ -64,7 +64,7 @@ return require('packer').startup(function(use)
 	use { 'folke/lsp-colors.nvim' }
 	use { 'j-hui/fidget.nvim', config = function() require 'fidget'.setup {} end }
 	use { 'RRethy/vim-illuminate' }
-	use { 'neovim/nvim-lspconfig', config = function() require 'lsp' end }
+	use { 'neovim/nvim-lspconfig', config = function() require 'plugins.lsp' end }
 
 	-- snippets
 	use { 'quangnguyen30192/cmp-nvim-ultisnips' }
