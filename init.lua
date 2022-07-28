@@ -1,7 +1,7 @@
 vim.cmd('colorscheme nightfox')
+require('options')
 require('keys')
 require('plugins')
-require('options')
 require('config')
 require('gui-settings')
 

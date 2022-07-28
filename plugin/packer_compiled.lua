@@ -69,6 +69,70 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-calc"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-calc",
+    url = "https://github.com/hrsh7th/cmp-calc"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-dictionary"] = {
+    config = { "\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23dictionary-setting\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-dictionary",
+    url = "https://github.com/uga-rosa/cmp-dictionary"
+  },
+  ["cmp-emoji"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-emoji",
+    url = "https://github.com/hrsh7th/cmp-emoji"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lsp-document-symbol"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp-document-symbol",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp-document-symbol"
+  },
+  ["cmp-nvim-lsp-signature-help"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp-signature-help",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help"
+  },
+  ["cmp-omni"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-omni",
+    url = "https://github.com/hrsh7th/cmp-omni"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-skkeleton"] = {
+    after_files = { "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-skkeleton\\after\\plugin\\cmp_skkeleton.lua" },
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\cmp-skkeleton",
+    url = "https://github.com/rinx/cmp-skkeleton"
+  },
+  ["cmp-spell"] = {
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-spell",
+    url = "https://github.com/f3fora/cmp-spell"
+  },
   ["denops.vim"] = {
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\denops.vim",
@@ -80,10 +144,24 @@ _G.packer_plugins = {
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/hoob3rt/lualine.nvim"
   },
+  neogit = {
+    config = { "\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19plugins.neogit\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neogit",
+    url = "https://github.com/TimUntersberger/neogit"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["nvim-cmp"] = {
+    after = { "cmp-skkeleton" },
+    config = { "\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16cmp-setting\frequire\0" },
+    loaded = true,
+    only_config = true,
+    path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-treesitter"] = {
     config = { "\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24plugins.tree-sitter\frequire\0" },
@@ -102,8 +180,10 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   skkeleton = {
+    after = { "cmp-skkeleton" },
     config = { "\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.skkeleton\frequire\0" },
     loaded = true,
+    only_config = true,
     path = "C:\\Users\\keith\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\skkeleton",
     url = "https://github.com/vim-skk/skkeleton"
   },
@@ -138,6 +218,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: neogit
+time([[Config for neogit]], true)
+try_loadstring("\27LJ\2\n.\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\19plugins.neogit\frequire\0", "config", "neogit")
+time([[Config for neogit]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\24plugins.tree-sitter\frequire\0", "config", "nvim-treesitter")
@@ -146,22 +230,34 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for skkeleton]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.skkeleton\frequire\0", "config", "skkeleton")
 time([[Config for skkeleton]], false)
--- Config for: vgit.nvim
-time([[Config for vgit.nvim]], true)
-try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17plugins.vgit\frequire\0", "config", "vgit.nvim")
-time([[Config for vgit.nvim]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.telescope\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n/\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\20plugins.lualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
+-- Config for: cmp-dictionary
+time([[Config for cmp-dictionary]], true)
+try_loadstring("\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23dictionary-setting\frequire\0", "config", "cmp-dictionary")
+time([[Config for cmp-dictionary]], false)
 -- Config for: skkeleton_indicator.nvim
 time([[Config for skkeleton_indicator.nvim]], true)
 try_loadstring("\27LJ\2\nE\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\24skkeleton_indicator\frequire\0", "config", "skkeleton_indicator.nvim")
 time([[Config for skkeleton_indicator.nvim]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+try_loadstring("\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16cmp-setting\frequire\0", "config", "nvim-cmp")
+time([[Config for nvim-cmp]], false)
+-- Config for: vgit.nvim
+time([[Config for vgit.nvim]], true)
+try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17plugins.vgit\frequire\0", "config", "vgit.nvim")
+time([[Config for vgit.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n/\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\20plugins.lualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd cmp-skkeleton ]]
+time([[Sequenced loading]], false)
 if should_profile then save_profiles() end
 
 end)
