@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
 	
 	-- treesitter
 	use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate", config = function() require('plugins.tree-sitter') end }
+	use { 'RRethy/nvim-treesitter-endwise' }
 
 	-- languages
 	use {'tpope/vim-rails'}
@@ -27,7 +28,16 @@ return require('packer').startup(function(use)
 	use { "lukas-reineke/indent-blankline.nvim", config = function() require('plugins.indent-blankline') end } -- show indent
 	use { 'haya14busa/vim-edgemotion' }
 	use { 't9md/vim-quickhl' } -- for highlighting
+	use { 'tpope/vim-surround' }
+	use { 'junegunn/vim-easy-align' }
 	use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end } -- plugin for comment out
+	use { 'akinsho/toggleterm.nvim', config = function() require 'plugins.toggleterm' end }
+	use { 'windwp/nvim-autopairs', config = function() require('nvim-autopairs').setup() end }
+	use { 'tpope/vim-repeat' }
+	use { 'petertriho/nvim-scrollbar', config = function() require("scrollbar").setup{} end }
+	use { 'ggandor/lightspeed.nvim' }
+	use { 'folke/todo-comments.nvim', requires = "nvim-lua/plenary.nvim", config = function() require("todo-comments").setup{} end }
+  use({ 'ziontee113/icon-picker.nvim', config = function() require("icon-picker") end })
 
   -- fern file explorer
 	use { 'lambdalisue/fern.vim' }
@@ -43,6 +53,15 @@ return require('packer').startup(function(use)
 	-- git 
 	use { 'tanvirtin/vgit.nvim', requires = { 'nvim-lua/plenary.nvim' }, config = function() require 'plugins.vgit' end }
 	use { 'TimUntersberger/neogit', config = function() require 'plugins.neogit' end }
+	-- github
+  use { 'pwntester/octo.nvim', 
+	requires= { 
+					'nvim-lua/plenary.nvim', 
+					'nvim-telescope/telescope.nvim', 
+					'kyazdani42/nvim-web-devicons'
+		},
+		config= function () require"octo".setup() end
+	}
 
 	-- cmp
   use { 'hrsh7th/nvim-cmp', config = function() require 'plugins.cmp' end }
@@ -73,4 +92,7 @@ return require('packer').startup(function(use)
 	use { 'ray-x/lsp_signature.nvim', config = function() require "lsp_signature".setup() end }
 	use 'onsails/lspkind-nvim'
 	use { 'williamboman/nvim-lsp-installer' }
+
+	-- tmux
+	use { 'aserowy/tmux.nvim', config = function() require('plugins.tmux') end }
 end)
