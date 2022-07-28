@@ -1,0 +1,5 @@
+vim.cmd('colorscheme nightfox')
+require('plugins')
+require('options')
+require('config')
+require('gui-settings')
