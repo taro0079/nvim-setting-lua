@@ -95,4 +95,7 @@ return require('packer').startup(function(use)
 
 	-- tmux
 	use { 'aserowy/tmux.nvim', config = function() require('plugins.tmux') end }
+
+	-- markdown
+	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 end)
